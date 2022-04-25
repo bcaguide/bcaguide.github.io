@@ -13,9 +13,63 @@ ul {
   margin: 0;
 }
 
+#trapezoid {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  border: 60px solid rgba(0,0,0,0);
+  border-top: 0 solid;
+  border-bottom: 50px solid rgba(1, 1, 1, .4);
+  -webkit-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgba(0,0,0,0.7);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  margin-top:0px;
+  width: 640px;
+  position: relative;
+  transition: all 0.7s ease;
+  padding-left:1.5%;
+  align-content: center;
+  align-items: center;
+}
+
+#trapezoid a, .subnavbtn {
+ -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+#trapezoid:hover .sub-home {
+  justify-content: center;
+}
+
+.navbar {
+  display:flex;
+  justify-content: center;
+  height: 50px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  transition: all 0.5s ease;
+}
+
 .letters {
-  margin-left: 120px;
-  column-count: 3;
+  margin-left: 180px;
+  column-width: 50px;
+  column-gap: 10px;
+  column-count: 2;
 }
 
 li
@@ -107,6 +161,6 @@ p {
 
 body {
   background: #ffff00;
-  margin-top:40px;
   margin-bottom:40px;
+  margin-top: 0px;
 }
