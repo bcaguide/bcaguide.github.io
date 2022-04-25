@@ -7,6 +7,20 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+		<script type="text/javascript">
+			var links = new Array();
+			links[0] = "letter1.html";
+			links[1] = "letter2.html";
+			links[2] = "letter3.html";
+			links[3] = "letter4.html";
+			links[4] = "letter5.html";
+			/*links[5] = "letter6.html";*/
+			function openLink() {
+				var i = Math.floor(Math.random() * links.length);
+				parent.location = links[i];
+				return false;
+			}
+		</script>
 	</head>
 	<body style = "background-color:#FFFFFF">
 		<h2>Bergen County Academies</h2>
@@ -30,6 +44,9 @@
 		<p>That is the end of the letter. Hope it was useful.</p>
 		<p>Thanks,</p>
 		<p>Senior Student</p>
+		<div style="text-align:center">
+			<button onclick="openLink();">Random letter</button>
+		</div>
 		<h3><a href="letters.html">Home</a></h3>
 	</body>
 </html>
