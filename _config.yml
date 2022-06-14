@@ -1,0 +1,11 @@
+collections:
+  letters:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "letters"
+    values:
+      layout: "letter"
+      nav_item: "letters"
