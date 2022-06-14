@@ -8,7 +8,7 @@ button {
 li.column2 { margin-left: 40%; }
 li.column3 { margin-left: 68%; }*/
 
-ul {
+.letters ul {
   list-style: none;
   margin: 0;
 }
@@ -71,13 +71,12 @@ ul {
 }
 
 .letters {
-  margin-left: 180px;
   column-width: 50px;
   column-gap: 10px;
   column-count: 2;
 }
 
-li
+.letters li
 {
   color: #20421c;
   font-size: 22px;
@@ -155,8 +154,7 @@ a:hover::before {
   transform: scaleX(1);
 }
 
-p {
-  font-family: 'Roboto', sans-serif;
+#content {
   font-size: 24px;
   color: #000000;
   text-align: center;
@@ -164,7 +162,12 @@ p {
   margin-left: 20%;
 }
 
+.prose li {
+  margin-bottom: 1rem;
+}
+
 body {
+  font-family: 'Roboto', sans-serif;
   background-color: white;
   margin-bottom:40px;
   margin-top: 0px;

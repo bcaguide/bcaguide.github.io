@@ -1,0 +1,20 @@
+---
+title: Boom Boom Pow
+---
+
+Dear Freshman Me,
+
+From me to you, here are some hot takes I wish I knew going into BCA:
+
+* Don’t take classes just because they’re “more prestigious” or “all your friends are taking them.” Take classes that you’re interested in! I bullied myself into taking IB history because I thought it would make me feel smarter, but it really just made me feel silly because I was doing so much work for a class that I wasn’t even interested in. The worst part, I could get college credit for both classes, so the pain wasn’t even worth it. Follow your heart!!!!!
+* Don’t stress too much. I know it’s a lot easier said than done, but genuinely your mental health is **<u>SO</u>** much more important than a grade on a test. Transitioning into high school isn’t easy, and all of your teachers understand that. If you find yourself staying up until 3 every night or getting super overwhelmed by homework and assessments, talk to your teachers. They can be flexible in helping you work out extensions or better ways to prioritize and manage your time. There is no reason to be getting less than 6 or 7 hours of sleep, and your teachers will understand that your physical well-being is more important than their homework assignment.
+    * Sidenote: seeing who gets the least amount of sleep is not a competition. A lot of your friends might brag about only getting 3 hours of sleep last night and how that somehow means that they are smarter or work harder than you do. It doesn’t. It just means they’re worse at managing their time and that they’re more tired. Please please please don’t envy them.
+* Take advantage of your teachers. So many of them are here to help you, and are great resources. I only started getting closer to my teachers my senior year, and I wish I had taken advantage of them sooner. Whether it’s for academic advice, help on personal projects, or to just sit and chat about life, my teachers have been really helpful in helping me navigate my senior year.
+* My biggest regret over these past four years is that I didn’t try enough. In freshman year, I was worried about overwhelming myself and wanted to focus on getting good grades. While it is important to pace yourself and not bite off more than you can chew, it’s also important to prioritize your time. If I could go back and do it all over again, I would 100% prioritize joining clubs and trying new things over getting a 96% on my trig test. In the long run, you won’t remember how badly you did on your acceleration test or how great your chem grade was, you’ll remember the fun things you did with your friends after school. You only get to do high school once, spend it making friends and experiencing things you can only do in high school.
+    * Sidenote: Don’t be afraid to do things outside of your academy! I spent my freshman year trying to fit into the accepted idea of “what a science kid is.” Just because you chose an academy for yourself when you were 13 in no way means it should define the trajectory of your life. Try new things! I found that electives are the best way to do this. While I love my science classes, I also love taking art, fashion, cooking, comp sci, and engineering electives. Not only have they made me a more well-rounded person, but they’ve allowed me to explore what I like and what I don’t like by getting a taste of many different fields. Don’t pigeonhole yourself because you really can do anything.
+
+This was really long, but I hope it’s helpful as you start the next 4 years of your life. Remember that’s all that it is: the next 4 years. Just because you worked really hard to get into this school doesn’t mean that it defines you. This is just a place. Granted, a place with a lot of resources and people who want to help you, but at the end of the day it’s up to you to make the best of it. I wish you the best of luck, and don’t forget to have fun!!!!!
+
+Love,
+
+Your Senior Self 🥰

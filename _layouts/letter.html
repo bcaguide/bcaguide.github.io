@@ -4,5 +4,9 @@ layout: basic
 
 <h2>{{ page.title }}</h2>
 <h3><a href="/letters.html">All Letters</a></h3>
-{{ content }}
+
+<main id="content" class="prose">
+    {{ content }}
+</main>
+
 {% include randomletter.html %}
