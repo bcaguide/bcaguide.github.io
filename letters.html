@@ -1,57 +1,19 @@
-<DOCTYPE! html>
-<html>
-	<head>
-    <meta charset="utf-8">
-		<title>BCA Disorientation Guide</title>
-    <link rel="stylesheet" href="guidestyle.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-		<script type="text/javascript">
-			var links = new Array();
-			links[0] = "letter1.html";
-			links[1] = "letter2.html";
-			links[2] = "letter3.html";
-			links[3] = "letter4.html";
-			links[4] = "letter5.html";
-			/*links[5] = "letter6.html";*/
-			function openLink() {
-  			var i = Math.floor(Math.random() * links.length);
-  			parent.location = links[i];
-  			return false;
-			}
-		</script>
-		<nav class="navbar">
-			<div id="trapezoid">
-				<a href="index.html" class="expandHome">About</a>
-				<a href="letters.html" class="expandHome"><b><div style="color:#000000">Letters</div></b></a>
-				<a href="resources.html" class="expandHome">Resources</a>
-				<a href="history.html" class="expandHome">History</a>
-			</div>
-		</nav>
-	</head>
-	<body style = "background-color:#FFFFFF">
-		<div class="tops">
-		<h2>Bergen County Academies</h2>
-		<h1>Disorientation Guide</h1>
-	</div>
-		<h2><a href="http://bca-sau.carrd.co/" class="link-moveout">Brought to you by Student Advocacy Union</a></h2>
-		<h3>Letters</h3>
-		<p>If you are a junior or a senior and wish to write your own letter, the link to submit them is <a href="https://forms.gle/V2BEhHwXLqLZLLPL7">here</a>. The directions are at the top (please read!).</p>
-		<div style="text-align:center">
-			<button onclick="openLink();">Choose for me</button>
-		</div>
-		<br>
-		<div class="letters">
-		<ul class="grid-list"
-			><li><a href="letter1.html" class="link-moveout">Things turn out different</a></li
-			><li><a href="letter2.html" class="link-moveout">Ramblings of a senior</a></li
-			><li><a href="letter3.html" class="link-moveout">From another dimension</a></li
-			><li><a href="letter4.html" class="link-moveout">Useful tips</a></li
-			><li><a href="letter5.html" class="link-moveout">How to hear yourself</a></li
-			><!--<li><a href="letter6.html" class="link-moveout">Letter 6</a></li
-			>--></ul>
-		</div>
-<h4>This site is not affiliated with Bergen County Academies.</h4>
-	</body>
-</html>
+---
+layout: default
+title: Letters
+nav_item: letters
+---
+
+<h3>Letters</h3>
+<p>If you are a junior or a senior and wish to write your own letter, the link to submit them is <a href="https://forms.gle/V2BEhHwXLqLZLLPL7">here</a>. The directions are at the top (please read!).</p>
+{% include randomletter.html %}
+<br>
+<div class="letters">
+<ul class="grid-list">
+	{% for letter in site.letters %}
+		<li>
+			<a class="link-moveout" href="{{ letter.url }}">{{ letter.title }}</a>
+		</li>
+	{% endfor %}
+</ul>
+</div>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>{{ page.title }} - BCA Disorientation Guide</title>
+	<link rel="stylesheet" href="/guidestyle.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-color:#FFFFFF">
+	<nav class="navbar">
+		<div id="trapezoid">
+			{% include navitem.html href="/" id="about" content="About" %}
+			{% include navitem.html href="/letters.html" id="letters" content="Letters" %}
+			{% include navitem.html href="/resources.html" id="resources" content="Resources" %}
+			{% include navitem.html href="/history.html" id="history" content="History" %}
+		</div>
+	</nav>
+	{{ content }}
+	<h4>This site is not affiliated with Bergen County Academies.</h4>
+</body>
+
+</html>

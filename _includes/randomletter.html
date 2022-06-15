@@ -1,0 +1,15 @@
+<div style="text-align:center">
+    <button type="button" onclick="randomLetter();">Choose for me</button>
+</div>
+<script>
+    window.letters = [
+        /* {% for letter in site.letters %} */
+        "{{ letter.url }}",
+        /* {% endfor %} */
+    ];
+
+    function randomLetter() {
+        if (window.letters.length === 0) alert("No letters available");
+        window.location = window.letters[Math.floor(Math.random() * letters.length)];
+    }
+</script>
