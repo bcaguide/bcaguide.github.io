@@ -30,7 +30,6 @@ li.column3 { margin-left: 68%; }*/
   -webkit-transform: rotateX(180deg);
   transform: rotateX(180deg);
   margin-top:0px;
-  width: 640px;
   position: relative;
   transition: all 0.7s ease;
   padding-left:1.5%;
