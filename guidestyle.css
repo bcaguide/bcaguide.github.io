@@ -1,6 +1,6 @@
 button {
   font-size: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
   padding: 10px;
 }
 
@@ -20,18 +20,16 @@ li.column3 { margin-left: 68%; }*/
   height: 0;
   border: 60px solid rgba(0,0,0,0);
   border-top: 0 solid;
-  border-bottom: 50px solid rgba(1, 1, 1, .4);
+  border-bottom: 50px solid #D572F7;
   -webkit-border-radius: 20px 20px 0 0;
   border-radius: 20px 20px 0 0;
-  font-family: 'Josefin Sans', sans-serif;
-  color: rgba(0,0,0,0.7);
+  font-family: Montserrat, sans-serif;
   -o-text-overflow: clip;
   text-overflow: clip;
   -webkit-transform: rotateX(180deg);
   transform: rotateX(180deg);
   margin-top:0px;
   position: relative;
-  transition: all 0.7s ease;
   padding-left:1.5%;
   align-content: center;
   align-items: center;
@@ -44,7 +42,7 @@ li.column3 { margin-left: 68%; }*/
 
 #trapezoid a.nav-active {
   font-weight: bold;
-  color: black;
+  color: #7d00a7;
 }
 
 #trapezoid:hover .sub-home {
@@ -60,13 +58,17 @@ li.column3 { margin-left: 68%; }*/
 .navbar a {
   float: left;
   font-size: 16px;
-  color: white;
+  color: #323B47;
   text-align: center;
   padding: 14px 25px;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 4px;
   transition: all 0.5s ease;
+}
+
+.navbar a:hover {
+  color: #323B47;
 }
 
 .letters {
@@ -79,17 +81,19 @@ li.column3 { margin-left: 68%; }*/
 {
   color: #20421c;
   font-size: 22px;
-  font-family: 'Roboto', sans-serif;
   line-height: 3em;
 }/* li.reset
 {
   margin-top: -4em;
 }*/
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  font-family: Montserrat, sans-serif;
+}
+
 h1 {
-  font-family: 'Roboto', sans-serif;
   font-size: 70px;
-  color: #000000;
   padding-left: 40;
   padding-right: 40;
   margin: 0;
@@ -97,22 +101,16 @@ h1 {
 }
 
 h2 {
-  font-family: 'Roboto', sans-serif;
-  color: #000000;
   font-size: 35px;
   text-align: center;
 }
 
 h3 {
-  font-family: 'Roboto', sans-serif;
-  color: #000000;
   font-size: 33px;
   text-align: center;
 }
 
 h4 {
-  font-family: 'Roboto', sans-serif;
-  color: #20421c;
   font-size: 17px;
   text-align: center;
   padding-bottom: 10px;
@@ -120,20 +118,19 @@ h4 {
 }
 
 h5 {
-  font-family: 'Roboto', sans-serif;
-  color: #000000;
   font-size: 25px;
   text-align: center;
 }
 
 a {
   position: relative;
-  color: #20421c;
+  color: #D572F7;
   text-decoration: none;
+  transition: color 0.2s;
 }
 
 a:hover {
-  color: #20421c;
+  color: #8C8CA8;
 }
 
 a::before {
@@ -144,9 +141,10 @@ a::before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #20421c;
+  background-color: #D572F7;
   transform: scaleX(0);
   transition: transform 0.3s ease;
+  z-index: 10;
 }
 
 a:hover::before {
@@ -155,7 +153,6 @@ a:hover::before {
 
 #content {
   font-size: 24px;
-  color: #000000;
   text-align: center;
   margin-right: 20%;
   margin-left: 20%;
@@ -166,8 +163,10 @@ a:hover::before {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: white;
+  font-family: Montserrat, sans-serif;
+  background-color: #323B47;
+  color: white;
   margin-bottom:40px;
   margin-top: 0px;
+  color-scheme: dark;
 }
