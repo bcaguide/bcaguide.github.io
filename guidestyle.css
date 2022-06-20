@@ -13,31 +13,35 @@ li.column3 { margin-left: 68%; }*/
   margin: 0;
 }
 
-#trapezoid {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
+#trapezoid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60px;
+  width: 0;
   height: 0;
-  border: 60px solid rgba(0,0,0,0);
-  border-top: 0 solid;
-  border-bottom: 50px solid #D572F7;
-  -webkit-border-radius: 20px 20px 0 0;
-  border-radius: 20px 20px 0 0;
-  font-family: Montserrat, sans-serif;
-  -o-text-overflow: clip;
-  text-overflow: clip;
-  -webkit-transform: rotateX(180deg);
-  transform: rotateX(180deg);
-  margin-top:0px;
-  position: relative;
-  padding-left:1.5%;
-  align-content: center;
-  align-items: center;
+  border-left: 60px solid transparent;
+  border-top: 60px solid #D572F7;
 }
 
-#trapezoid a, .subnavbtn {
- -webkit-transform: rotateX(180deg);
-  transform: rotateX(180deg);
+#trapezoid {
+  background-color: #D572F7;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#trapezoid::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -60px;
+  width: 0;
+  height: 0;
+  border-right: 60px solid transparent;
+  border-top: 60px solid #D572F7;
 }
 
 #trapezoid a.nav-active {
@@ -60,7 +64,7 @@ li.column3 { margin-left: 68%; }*/
   font-size: 16px;
   color: #323B47;
   text-align: center;
-  padding: 14px 25px;
+  padding: 0 25px;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -186,24 +190,39 @@ body {
   #content {
     font-size: 16px;
   }
+}
 
+#trapezoid a {
+  line-height: 60px;
+}
+
+#trapezoid a::before {
+  background-color: #7d00a7;
+}
+
+@media screen and (max-width: 960px) {
   .navbar-menu-button {
     display: block;
   }
 
   .navbar-menu {
-    display: none;
     position: absolute;
     background-color: #D572F7;
-    bottom: 16px;
-    left: 0;
+    top: 64px;
+    left: 50%;
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
     width: 200px;
     margin-left: auto;
     margin-right: auto;
+    pointer-events: none;
+    display: none;
+    z-index: 10;
   }
 
   .navbar-menu-active {
     display: block;
+    pointer-events: all;
   }
 
   a.expandHome {
