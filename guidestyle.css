@@ -154,8 +154,11 @@ a:hover::before {
 #content {
   font-size: 24px;
   text-align: center;
-  margin-right: 20%;
-  margin-left: 20%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 24px;
+  max-width: 800px;
+  word-wrap: break-word;
 }
 
 .prose li {
@@ -169,4 +172,43 @@ body {
   margin-bottom:40px;
   margin-top: 0px;
   color-scheme: dark;
+}
+
+.navbar-menu-button {
+  display: none;
+}
+
+@media screen and (max-width: 540px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  #content {
+    font-size: 16px;
+  }
+
+  .navbar-menu-button {
+    display: block;
+  }
+
+  .navbar-menu {
+    display: none;
+    position: absolute;
+    background-color: #D572F7;
+    bottom: 16px;
+    left: 0;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navbar-menu-active {
+    display: block;
+  }
+
+  a.expandHome {
+    display: block;
+    margin: 0;
+    float: none;
+  }
 }

@@ -16,15 +16,27 @@
 <body>
 	<nav class="navbar">
 		<div id="trapezoid">
-			{% include navitem.html href="/" id="about" content="About" %}
-			{% include navitem.html href="/letters.html" id="letters" content="Letters" %}
-			{% include navitem.html href="/health.html" id="health" content="Health" %}
-			{% include navitem.html href="/resources.html" id="resources" content="Resources" %}
-			{% include navitem.html href="/history.html" id="history" content="History" %}
+			<div class="navbar-menu-button">
+				<a href="#" class="expandHome" onClick="toggleNavbar(event)">Menu</a>
+			</div>
+			<div class="navbar-menu">
+				{% include navitem.html href="/" id="about" content="About" %}
+				{% include navitem.html href="/letters.html" id="letters" content="Letters" %}
+				{% include navitem.html href="/health.html" id="health" content="Health" %}
+				{% include navitem.html href="/resources.html" id="resources" content="Resources" %}
+				{% include navitem.html href="/history.html" id="history" content="History" %}
+			</div>
 		</div>
 	</nav>
 	{{ content }}
 	<h4>This site is not affiliated with Bergen County Academies.</h4>
+	<script>
+		function toggleNavbar(e) {
+			e.preventDefault();
+			const navbar = document.getElementsByClassName("navbar-menu")[0];
+			navbar.classList.toggle("navbar-menu-active");
+		}
+	</script>
 </body>
 
 </html>
